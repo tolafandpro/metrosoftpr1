@@ -29,7 +29,7 @@
     />
 
     <title>
-      User List - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro
+      Course Settings - Pages | Metrosoft - Bootstrap 5 HTML Admin Template - Pro
     </title>
 
     <meta
@@ -1314,12 +1314,12 @@
                         class="d-flex align-items-start justify-content-between"
                       >
                         <div class="content-left">
-                          <span>Session</span>
+                          <span>Courses</span>
                           <div class="d-flex align-items-end mt-2">
-                            <h4 class="mb-0 me-2">21,459</h4>
-                            <small class="text-success">(+29%)</small>
+                            <h4 class="mb-0 me-2">30</h4>
+                            <!-- <small class="text-success">(+29%)</small> -->
                           </div>
-                          <small>Total Users</small>
+                          <small>Total number of courses</small>
                         </div>
                         <span class="badge bg-label-primary rounded p-2">
                           <i class="bx bx-user bx-sm"></i>
@@ -1335,10 +1335,10 @@
                         class="d-flex align-items-start justify-content-between"
                       >
                         <div class="content-left">
-                          <span>Paid Users</span>
+                          <span>Published Courses</span>
                           <div class="d-flex align-items-end mt-2">
-                            <h4 class="mb-0 me-2">4,567</h4>
-                            <small class="text-success">(+18%)</small>
+                            <h4 class="mb-0 me-2">5</h4>
+                            <!-- <small class="text-success">(+18%)</small> -->
                           </div>
                           <small>Last week analytics </small>
                         </div>
@@ -1356,12 +1356,12 @@
                         class="d-flex align-items-start justify-content-between"
                       >
                         <div class="content-left">
-                          <span>Active Users</span>
+                          <span>Authors</span>
                           <div class="d-flex align-items-end mt-2">
-                            <h4 class="mb-0 me-2">19,860</h4>
-                            <small class="text-danger">(-14%)</small>
+                            <h4 class="mb-0 me-2">9</h4>
+                            <!-- <small class="text-danger">(-14%)</small> -->
                           </div>
-                          <small>Last week analytics</small>
+                          <small>Numbers of Authors</small>
                         </div>
                         <span class="badge bg-label-success rounded p-2">
                           <i class="bx bx-group bx-sm"></i>
@@ -1377,12 +1377,12 @@
                         class="d-flex align-items-start justify-content-between"
                       >
                         <div class="content-left">
-                          <span>Pending Users</span>
+                          <span>Pending Courses</span>
                           <div class="d-flex align-items-end mt-2">
-                            <h4 class="mb-0 me-2">237</h4>
-                            <small class="text-success">(+42%)</small>
+                            <h4 class="mb-0 me-2">4</h4>
+                            <!-- <small class="text-success">(+42%)</small> -->
                           </div>
-                          <small>Last week analytics</small>
+                          <small>Numbers of Pending courses</small>
                         </div>
                         <span class="badge bg-label-warning rounded p-2">
                           <i class="bx bx-user-voice bx-sm"></i>
@@ -1395,23 +1395,33 @@
               <!-- Users List Table -->
               <div class="card">
                 <div class="card-header border-bottom">
-                  <h5 class="card-title">Search Filter</h5>
+                  <h5 class="card-title">Filter Course</h5>
                   <div
                     class="d-flex justify-content-between align-items-center row py-3 gap-3 gap-md-0"
                   >
-                    <div class="col-md-4 user_role">
+                    <div class="col-md-4 user_role mb-3">
                       <select id="UserRole" class="form-select text-capitalize">
-                        <option value="">Select Role</option>
-                        <option value="Admin">Admin</option>
-                        <option value="Author">Author</option>
-                        <option value="Editor">Editor</option>
-                        <option value="Maintainer">Maintainer</option>
-                        <option value="Subscriber">Subscriber</option>
+                        <option value="">Select Course</option>
+                        <option value="Admin">Data Science</option>
+                        <option value="Author">A.I.</option>
+                        <option value="Editor">Wellness</option>
+                        <option value="Maintainer">Marketing</option>
+                        <option value="Subscriber">Excel</option>
                       </select>
                     </div>
-                    <div class="col-md-4 user_plan">
+                    <div class="col-md-4 user_role mb-3">
+                      <select id="UserRole" class="form-select text-capitalize">
+                        <option value="">Select Tags</option>
+                        <option value="Admin">Data Science</option>
+                        <option value="Author">Password</option>
+                        <option value="Editor">Science</option>
+                        <option value="Maintainer">Business</option>
+                        <option value="Subscriber">Movie</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 user_plan mb-3">
                       <select id="UserPlan" class="form-select text-capitalize">
-                        <option value="">Select Plan</option>
+                        <option value="">Select Skill</option>
                         <option value="Basic">Basic</option>
                         <option value="Company">Company</option>
                         <option value="Enterprise">Enterprise</option>
@@ -1425,13 +1435,56 @@
                       >
                         <option value="">Select Status</option>
                         <option value="Pending" class="text-capitalize">
-                          Pending
+                          Assigned
                         </option>
                         <option value="Active" class="text-capitalize">
-                          Active
+                          Completed
                         </option>
                         <option value="Inactive" class="text-capitalize">
-                          Inactive
+                          In-Progress
+                        </option>
+                        <option value="Inactive" class="text-capitalize">
+                          De-activated
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 user_status">
+                      <select
+                        id="FilterTransaction"
+                        class="form-select text-capitalize"
+                      >
+                        <option value="">Select Status</option>
+                        <option value="Pending" class="text-capitalize">
+                          Assigned
+                        </option>
+                        <option value="Active" class="text-capitalize">
+                          Completed
+                        </option>
+                        <option value="Inactive" class="text-capitalize">
+                          In-Progress
+                        </option>
+                        <option value="Inactive" class="text-capitalize">
+                          De-activated
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 user_status">
+                      <select
+                        id="FilterTransaction"
+                        class="form-select text-capitalize"
+                      >
+                        <option value="">Select Status</option>
+                        <option value="Pending" class="text-capitalize">
+                          Assigned
+                        </option>
+                        <option value="Active" class="text-capitalize">
+                          Completed
+                        </option>
+                        <option value="Inactive" class="text-capitalize">
+                          In-Progress
+                        </option>
+                        <option value="Inactive" class="text-capitalize">
+                          De-activated
                         </option>
                       </select>
                     </div>
@@ -1508,7 +1561,7 @@
                               <span
                                 ><i class="bx bx-plus me-0 me-sm-1"></i
                                 ><span class="d-none d-sm-inline-block"
-                                  >Add New User</span
+                                  >Add New Course</span
                                 ></span
                               >
                             </button>
@@ -1541,7 +1594,7 @@
                             aria-label="User: activate to sort column ascending"
                             aria-sort="descending"
                           >
-                            User
+                            Courses
                           </th>
                           <th
                             class="sorting"
@@ -1552,7 +1605,7 @@
                             style="width: 127px"
                             aria-label="Role: activate to sort column ascending"
                           >
-                            Role
+                            Topics/Tages
                           </th>
                           <th
                             class="sorting"
@@ -1563,7 +1616,7 @@
                             style="width: 83px"
                             aria-label="Plan: activate to sort column ascending"
                           >
-                            Assign
+                            Author
                           </th>
                           <th
                             class="sorting"
@@ -1574,7 +1627,7 @@
                             style="width: 159px"
                             aria-label="Billing: activate to sort column ascending"
                           >
-                            Views
+                            Created At
                           </th>
                           <th
                             class="sorting"
@@ -1612,7 +1665,7 @@
                               <div class="avatar-wrapper">
                                 <div class="avatar avatar-sm me-3">
                                   <img
-                                    src="../../assets/img/avatars/2.png"
+                                    src="../../assets/img/elements/1.jpg"
                                     alt="Avatar"
                                     class="rounded-circle"
                                   />
@@ -1623,11 +1676,10 @@
                                   href="app-user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
-                                    >Zsazsa McCleverty</span
+                                    >Data Science</span
                                   ></a
-                                ><small class="text-muted"
-                                  >zmcclevertye@soundcloud.com</small
                                 >
+                                <!-- <small class="text-muted">zmcclevertye@soundcloud.com</small> -->
                               </div>
                             </div>
                           </td>
@@ -1637,13 +1689,13 @@
                               ><span
                                 class="badge badge-center rounded-pill bg-label-primary w-px-30 h-px-30 me-2"
                                 ><i class="bx bx-pie-chart-alt bx-xs"></i></span
-                              >Maintainer</span
+                              >Science</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Enterprise</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">Gbenga</span></td>
+                          <td>01/02/23</td>
                           <td>
-                            <span class="badge bg-label-success">Active</span>
+                            <span class="badge bg-label-success">Published</span>
                           </td>
                           <td>
                             <div class="d-inline-block text-nowrap">
@@ -1684,7 +1736,7 @@
                               <div class="avatar-wrapper">
                                 <div class="avatar avatar-sm me-3">
                                   <img
-                                    src="../../assets/img/avatars/7.png"
+                                    src="../../assets/img/elements/2.jpg"
                                     alt="Avatar"
                                     class="rounded-circle"
                                   />
@@ -1695,11 +1747,12 @@
                                   href="app-user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
-                                    >Yoko Pottie</span
+                                    >Excel</span
                                   ></a
-                                ><small class="text-muted"
-                                  >ypottiec@privacy.gov.au</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >ypottiec@privacy.gov.au</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -1712,11 +1765,11 @@
                               >Subscriber</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Basic</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">Ayobami</span></td>
+                          <td>06/03/21</td>
                           <td>
                             <span class="badge bg-label-secondary"
-                              >Inactive</span
+                              >Unpublished</span
                             >
                           </td>
                           <td>
@@ -1758,7 +1811,7 @@
                               <div class="avatar-wrapper">
                                 <div class="avatar avatar-sm me-3">
                                   <img
-                                    src="../../assets/img/avatars/6.png"
+                                    src="../../assets/img/elements/11.jpg"
                                     alt="Avatar"
                                     class="rounded-circle"
                                   />
@@ -1771,9 +1824,10 @@
                                   ><span class="fw-semibold"
                                     >Wesley Burland</span
                                   ></a
-                                ><small class="text-muted"
-                                  >wburlandj@uiuc.edu</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >wburlandj@uiuc.edu</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -1786,11 +1840,11 @@
                               >Editor</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Team</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">Ibukun</span></td>
+                          <td>04/02/21</td>
                           <td>
                             <span class="badge bg-label-secondary"
-                              >Inactive</span
+                              >Unpublished</span
                             >
                           </td>
                           <td>
@@ -1842,11 +1896,12 @@
                                   href="app-user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
-                                    >Vladamir Koschek</span
+                                    >Vehicle Kopt</span
                                   ></a
-                                ><small class="text-muted"
-                                  >vkoschek17@abc.net.au</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >vkoschek17@abc.net.au</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -1859,10 +1914,10 @@
                               >Author</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Team</span></td>
-                          <td>Manual - Paypal</td>
+                          <td><span class="fw-semibold">Olayemi</span></td>
+                          <td>04/02/20</td>
                           <td>
-                            <span class="badge bg-label-success">Active</span>
+                            <span class="badge bg-label-success">Published</span>
                           </td>
                           <td>
                             <div class="d-inline-block text-nowrap">
@@ -1913,11 +1968,12 @@
                                   href="app-user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
-                                    >Tyne Widmore</span
+                                    >The Wild</span
                                   ></a
-                                ><small class="text-muted"
-                                  >twidmore12@bravesites.com</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >twidmore12@bravesites.com</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -1927,11 +1983,11 @@
                               ><span
                                 class="badge badge-center rounded-pill bg-label-warning w-px-30 h-px-30 me-2"
                                 ><i class="bx bx-user bx-xs"></i></span
-                              >Subscriber</span
+                              >Data Management</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Team</span></td>
-                          <td>Manual - Cash</td>
+                          <td><span class="fw-semibold">Ada</span></td>
+                          <td>07/02/21</td>
                           <td>
                             <span class="badge bg-label-warning">Pending</span>
                           </td>
@@ -1984,11 +2040,12 @@
                                   href="app-user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
-                                    >Travus Bruntjen</span
+                                    >Pivort Table</span
                                   ></a
-                                ><small class="text-muted"
-                                  >tbruntjeni@sitemeter.com</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >tbruntjeni@sitemeter.com</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -2001,10 +2058,10 @@
                               >Admin</span
                             >
                           </td>
-                          <td><span class="fw-semibold">2</span></td>
-                          <td>Manual - Cash</td>
+                          <td><span class="fw-semibold">Recheal</span></td>
+                          <td>01/01/22</td>
                           <td>
-                            <span class="badge bg-label-success">Active</span>
+                            <span class="badge bg-label-success">Published</span>
                           </td>
                           <td>
                             <div class="d-inline-block text-nowrap">
@@ -2058,9 +2115,10 @@
                                   ><span class="fw-semibold"
                                     >Stu Delamaine</span
                                   ></a
-                                ><small class="text-muted"
-                                  >sdelamainek@who.int</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >sdelamainek@who.int</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -2074,7 +2132,7 @@
                             >
                           </td>
                           <td><span class="fw-semibold">Basic</span></td>
-                          <td>Auto Debit</td>
+                          <td>02/03/20</td>
                           <td>
                             <span class="badge bg-label-warning">Pending</span>
                           </td>
@@ -2200,9 +2258,10 @@
                                   ><span class="fw-semibold"
                                     >Stephen MacGilfoyle</span
                                   ></a
-                                ><small class="text-muted"
-                                  >smacgilfoyley@bigcartel.com</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >smacgilfoyley@bigcartel.com</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -2272,9 +2331,10 @@
                                   ><span class="fw-semibold"
                                     >Skip Hebblethwaite</span
                                   ></a
-                                ><small class="text-muted"
-                                  >shebblethwaite10@arizona.edu</small
                                 >
+                                <!-- <small class="text-muted"
+                                  >shebblethwaite10@arizona.edu</small
+                                > -->
                               </div>
                             </div>
                           </td>
@@ -2291,7 +2351,7 @@
                           <td>Manual - Cash</td>
                           <td>
                             <span class="badge bg-label-secondary"
-                              >Inactive</span
+                              >Unpublished</span
                             >
                           </td>
                           <td>
@@ -2430,7 +2490,7 @@
                 >
                   <div class="offcanvas-header">
                     <h5 id="offcanvasAddUserLabel" class="offcanvas-title">
-                      Add User
+                      Add Course
                     </h5>
                     <button
                       type="button"
@@ -2447,42 +2507,74 @@
                     >
                       <div class="mb-3">
                         <label class="form-label" for="add-user-fullname"
-                          >Full Name</label
+                          >Course Name</label
                         >
                         <input
                           type="text"
                           class="form-control"
                           id="add-user-fullname"
-                          placeholder="John Doe"
-                          name="userFullname"
+                          placeholder="Science"
+                          name="courseName"
                           aria-label="John Doe"
                         />
                       </div>
                       <div class="mb-3">
                         <label class="form-label" for="add-user-email"
-                          >Email</label
+                          >Topic/Tags</label
                         >
                         <input
                           type="text"
                           id="add-user-email"
                           class="form-control"
-                          placeholder="john.doe@example.com"
+                          placeholder="add tags"
                           aria-label="john.doe@example.com"
-                          name="userEmail"
+                          name="tags"
                         />
                       </div>
                       <div class="mb-3">
                         <label class="form-label" for="add-user-contact"
-                          >Contact</label
+                          >Duration</label
                         >
                         <input
                           type="text"
                           id="add-user-contact"
                           class="form-control phone-mask"
-                          placeholder="+1 (609) 988-44-11"
-                          aria-label="john.doe@example.com"
+                          placeholder="60mins"
+                          aria-label="00hrs 00mins"
                           name="userContact"
                         />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" for="country">Assign a User</label>
+                        <select id="country" class="select2 form-select">
+                          <option value="">Select</option>
+                          <option value="Australia">Gbenga</option>
+                          <option value="Bangladesh">Kunle</option>
+                          <option value="Belarus">Mary</option>
+                          <option value="Brazil">Tope</option>
+                          <option value="Canada">Ifoma</option>
+                          <option value="China">Fikayo</option>
+                          <option value="France">Ayobami</option>
+                          <option value="Germany">Ibukun</option>
+                          <option value="India">Tola</option>
+                          <option value="Indonesia">Martha</option>
+                          <option value="Israel">Israel</option>
+                          <!-- <option value="Italy">Italy</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Korea">Korea, Republic of</option>
+                          <option value="Mexico">Mexico</option>
+                          <option value="Philippines">Philippines</option>
+                          <option value="Russia">Russian Federation</option>
+                          <option value="South Africa">South Africa</option>
+                          <option value="Thailand">Thailand</option>
+                          <option value="Turkey">Turkey</option>
+                          <option value="Ukraine">Ukraine</option>
+                          <option value="United Arab Emirates">
+                            United Arab Emirates
+                          </option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="United States">United States</option> -->
+                        </select>
                       </div>
                       <div class="mb-3">
                         <label class="form-label" for="add-user-company"
@@ -2497,38 +2589,7 @@
                           name="companyName"
                         />
                       </div>
-                      <div class="mb-3">
-                        <label class="form-label" for="country">Country</label>
-                        <select id="country" class="select2 form-select">
-                          <option value="">Select</option>
-                          <option value="Australia">Australia</option>
-                          <option value="Bangladesh">Bangladesh</option>
-                          <option value="Belarus">Belarus</option>
-                          <option value="Brazil">Brazil</option>
-                          <option value="Canada">Canada</option>
-                          <option value="China">China</option>
-                          <option value="France">France</option>
-                          <option value="Germany">Germany</option>
-                          <option value="India">India</option>
-                          <option value="Indonesia">Indonesia</option>
-                          <option value="Israel">Israel</option>
-                          <option value="Italy">Italy</option>
-                          <option value="Japan">Japan</option>
-                          <option value="Korea">Korea, Republic of</option>
-                          <option value="Mexico">Mexico</option>
-                          <option value="Philippines">Philippines</option>
-                          <option value="Russia">Russian Federation</option>
-                          <option value="South Africa">South Africa</option>
-                          <option value="Thailand">Thailand</option>
-                          <option value="Turkey">Turkey</option>
-                          <option value="Ukraine">Ukraine</option>
-                          <option value="United Arab Emirates">
-                            United Arab Emirates
-                          </option>
-                          <option value="United Kingdom">United Kingdom</option>
-                          <option value="United States">United States</option>
-                        </select>
-                      </div>
+                      
                       <div class="mb-3">
                         <label class="form-label" for="user-role"
                           >User Role</label
@@ -2536,14 +2597,15 @@
                         <select id="user-role" class="form-select">
                           <option value="subscriber">Subscriber</option>
                           <option value="editor">Editor</option>
-                          <option value="maintainer">Maintainer</option>
+                          <option value="maintainer">Manager</option>
+                          <option value="maintainer">Cleaner</option>
                           <option value="author">Author</option>
                           <option value="admin">Admin</option>
                         </select>
                       </div>
                       <div class="mb-4">
                         <label class="form-label" for="user-plan"
-                          >Select Plan</label
+                          >Groups</label
                         >
                         <select id="user-plan" class="form-select">
                           <option value="basic">Basic</option>
