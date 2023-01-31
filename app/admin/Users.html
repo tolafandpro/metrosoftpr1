@@ -252,7 +252,7 @@
 
         <ul class="menu-inner py-1">
           <!-- Dashboards -->
-          <li class="menu-item active">
+          <li class="menu-item">
             <a href="index.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
               <div data-i18n="Home">Home</div>
@@ -271,7 +271,7 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="dashboards-crm.html" class="menu-link">
+                <a href="#" class="menu-link">
                   <div data-i18n="CRM">CRM</div>
                 </a>
               </li>
@@ -303,7 +303,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="group.html" class="menu-link">
+                  <a href="#" class="menu-link">
                     <div data-i18n="Content navbar">Engagement</div>
                   </a>
                 </li>
@@ -314,20 +314,20 @@
                 </li>
             </ul>
           </li>
-          <li class="menu-item">
+          <li class="menu-item active open">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
               <i class='bx bxs-user-account'></i>
               <div data-i18n="Admin">Admin</div>
             </a>
 
             <ul class="menu-sub">
-              <li class="menu-item">
+              <li class="menu-item active open">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                     <i class='bx bxs-user'></i>
                   <div data-i18n="User">User</div>
                 </a>
                 <ul class="menu-sub">
-                    <li class="menu-item">
+                    <li class="menu-item active">
                       <a href="Users.html" class="menu-link">
                         <div data-i18n="Collapsed menu">Users</div>
                       </a>
@@ -360,9 +360,10 @@
               
               <li class="menu-item">
                 <a href="user-deatails.html" class="menu-link">
-                  <div data-i18n="Collapsed menu">User Account</div>
+                  <div data-i18n="Collapsed menu">Edit User Account</div>
                 </a>
               </li>
+              
               
             </ul>
           </li>       
@@ -386,9 +387,15 @@
                 </a>
                 <ul class="menu-sub">
                   <li class="menu-item">
-                    <a href="pages-profile-user.html" class="menu-link">
+                    <a href="user-deatails.html" class="menu-link">
                       <div data-i18n="Profile">Profile</div>
                     </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="auth-login.html" class="menu-link">
+                      <div data-i18n="Login">Login</div>
+                    </a>
+                    
                   </li>
                   <li class="menu-item">
                     <a href="pages-profile-teams.html" class="menu-link">
@@ -469,12 +476,7 @@
               <div data-i18n="Authentications">Authentications</div>
             </a>
             <ul class="menu-sub">
-              <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
-                  <div data-i18n="Login">Login</div>
-                </a>
-                
-              </li>
+              
               <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                   <div data-i18n="Register">Register</div>
@@ -563,15 +565,7 @@
              <!-- Search -->
              <div class="navbar-nav align-items-center">
                <div class="nav-item navbar-search-wrapper mb-0">
-                 <!-- <a
-                   class="nav-item nav-link search-toggler px-0"
-                   href="javascript:void(0);"
-                 >
-                   <i class="bx bx-search bx-sm"></i>
-                   <span class="d-none d-md-inline-block text-muted"
-                     >Search (Ctrl+/)</span
-                   >
-                 </a> -->
+                
                  <div class="collapse navbar-collapse" id="navbar-ex-3">
                    <div class="navbar-nav me-auto active">
                      <a
@@ -585,7 +579,7 @@
                      <a class="nav-item nav-link" href="progress.html"
                        >Reports</a
                      >
-                     <a class="nav-item nav-link" href="dashboard.html"
+                     <a class="nav-item nav-link" href="Users.html"
                        >Admin</a
                      >
                    </div>
@@ -1563,7 +1557,7 @@
                             style="width: 83px"
                             aria-label="Plan: activate to sort column ascending"
                           >
-                            Assign
+                           Courses Assigned
                           </th>
                           <th
                             class="sorting"
@@ -1612,7 +1606,7 @@
                               <div class="avatar-wrapper">
                                 <div class="avatar avatar-sm me-3">
                                   <img
-                                    src="../../assets/img/avatars/2.png"
+                                    src="../../assets/img/avatars/1.png"
                                     alt="Avatar"
                                     class="rounded-circle"
                                   />
@@ -1620,7 +1614,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Zsazsa McCleverty</span
@@ -1637,11 +1631,11 @@
                               ><span
                                 class="badge badge-center rounded-pill bg-label-primary w-px-30 h-px-30 me-2"
                                 ><i class="bx bx-pie-chart-alt bx-xs"></i></span
-                              >Maintainer</span
+                              >Manager</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Enterprise</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">3</span></td>
+                          <td>1</td>
                           <td>
                             <span class="badge bg-label-success">Active</span>
                           </td>
@@ -1692,7 +1686,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Yoko Pottie</span
@@ -1712,8 +1706,8 @@
                               >Subscriber</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Basic</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">2</span></td>
+                          <td>0</td>
                           <td>
                             <span class="badge bg-label-secondary"
                               >Inactive</span
@@ -1766,7 +1760,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Wesley Burland</span
@@ -1786,8 +1780,8 @@
                               >Editor</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Team</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">1</span></td>
+                          <td>0</td>
                           <td>
                             <span class="badge bg-label-secondary"
                               >Inactive</span
@@ -1839,7 +1833,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Vladamir Koschek</span
@@ -1859,8 +1853,8 @@
                               >Author</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Team</span></td>
-                          <td>Manual - Paypal</td>
+                          <td><span class="fw-semibold">5</span></td>
+                          <td>2</td>
                           <td>
                             <span class="badge bg-label-success">Active</span>
                           </td>
@@ -1910,7 +1904,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Tyne Widmore</span
@@ -1927,11 +1921,11 @@
                               ><span
                                 class="badge badge-center rounded-pill bg-label-warning w-px-30 h-px-30 me-2"
                                 ><i class="bx bx-user bx-xs"></i></span
-                              >Subscriber</span
+                              >H.R.</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Team</span></td>
-                          <td>Manual - Cash</td>
+                          <td><span class="fw-semibold">5</span></td>
+                          <td>3</td>
                           <td>
                             <span class="badge bg-label-warning">Pending</span>
                           </td>
@@ -1981,7 +1975,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Travus Bruntjen</span
@@ -2002,7 +1996,7 @@
                             >
                           </td>
                           <td><span class="fw-semibold">2</span></td>
-                          <td>Manual - Cash</td>
+                          <td>1</td>
                           <td>
                             <span class="badge bg-label-success">Active</span>
                           </td>
@@ -2053,7 +2047,7 @@
                               </div>
                               <div class="d-flex flex-column">
                                 <a
-                                  href="app-user-view-account.html"
+                                  href="user-view-account.html"
                                   class="text-body text-truncate"
                                   ><span class="fw-semibold"
                                     >Stu Delamaine</span
@@ -2073,8 +2067,8 @@
                               >Author</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Basic</span></td>
-                          <td>Auto Debit</td>
+                          <td><span class="fw-semibold">4</span></td>
+                          <td>0</td>
                           <td>
                             <span class="badge bg-label-warning">Pending</span>
                           </td>
@@ -2141,11 +2135,11 @@
                               ><span
                                 class="badge badge-center rounded-pill bg-label-primary w-px-30 h-px-30 me-2"
                                 ><i class="bx bx-pie-chart-alt bx-xs"></i></span
-                              >Maintainer</span
+                              >Driver</span
                             >
                           </td>
                           <td><span class="fw-semibold">4</span></td>
-                          <td>Auto Debit</td>
+                          <td>0</td>
                           <td>
                             <span class="badge bg-label-warning">Pending</span>
                           </td>
@@ -2215,8 +2209,8 @@
                               >Maintainer</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Company</span></td>
-                          <td>Manual - Paypal</td>
+                          <td><span class="fw-semibold">1</span></td>
+                          <td>0</td>
                           <td>
                             <span class="badge bg-label-warning">Pending</span>
                           </td>
@@ -2259,7 +2253,7 @@
                               <div class="avatar-wrapper">
                                 <div class="avatar avatar-sm me-3">
                                   <img
-                                    src="../../assets/img/avatars/9.png"
+                                    src="../../assets/img/avatars/15.png"
                                     alt="Avatar"
                                     class="rounded-circle"
                                   />
@@ -2287,8 +2281,8 @@
                               >Admin</span
                             >
                           </td>
-                          <td><span class="fw-semibold">Company</span></td>
-                          <td>Manual - Cash</td>
+                          <td><span class="fw-semibold">5</span></td>
+                          <td>0</td>
                           <td>
                             <span class="badge bg-label-secondary"
                               >Inactive</span
