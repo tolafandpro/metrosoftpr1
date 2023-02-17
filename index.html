@@ -77,6 +77,7 @@
 
 	<!-- Plugins CSS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
@@ -137,9 +138,9 @@
 				<!-- Nav Main menu START -->
 				<ul class="navbar-nav navbar-nav-scroll me-auto">
 					<!-- Nav item 1 Demos -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle active" href="#" id="demoMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
-						<ul class="dropdown-menu" aria-labelledby="demoMenu">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" id="demoMenu"  aria-expanded="false">Home</a>
+						<!-- <ul class="dropdown-menu" aria-labelledby="demoMenu">
 							<li> <a class="dropdown-item active" href="index.html">Home Default</a></li>
 							<li> <a class="dropdown-item" href="index-2.html">Home Education</a></li>
 							<li> <a class="dropdown-item" href="index-3.html">Home Academy</a></li>
@@ -151,114 +152,34 @@
 							<li> <a class="dropdown-item" href="index-9.html">Home School</a></li><li>
 							</li><li> <a class="dropdown-item" href="index-10.html">Home Abroad</a></li>
 							<li> <a class="dropdown-item" href="index-11.html">Home Workshop</a></li>
-						</ul>
+						</ul> -->
 					</li>
 
 					<!-- Nav item 2 Pages -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
 						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
 							<!-- Dropdown submenu -->
 							<li class="dropdown-submenu dropend">
 								<a class="dropdown-item dropdown-toggle" href="#">Course</a>
 								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="course-categories.html">Course Categories</a></li>
+									<li> <a class="dropdown-item" href="/app/admin/courses.html">Course A</a></li>
 									<li> <hr class="dropdown-divider"></li>
-									<li> <a class="dropdown-item" href="course-grid.html">Course Grid Classic</a></li>
-									<li> <a class="dropdown-item" href="course-grid-2.html">Course Grid Minimal</a></li>
-									<li> <hr class="dropdown-divider"></li>
-									<li> <a class="dropdown-item" href="course-list.html">Course List Classic</a></li>
-									<li> <a class="dropdown-item" href="course-list-2.html">Course List Minimal</a></li>
-									<li> <hr class="dropdown-divider"></li>
-									<li> <a class="dropdown-item" href="course-detail.html">Course Detail Classic</a></li>
-									<li> <a class="dropdown-item" href="course-detail-min.html">Course Detail Minimal</a></li>
-									<li> <a class="dropdown-item" href="course-detail-adv.html">Course Detail Advance</a></li>
-									<li> <a class="dropdown-item" href="course-detail-module.html">Course Detail Module</a></li>
-									<li> <a class="dropdown-item" href="course-video-player.html">Course Full Screen Video</a></li>
+									<li> <a class="dropdown-item" href="/app/admin/courses.html">Course B</a></li>
 								</ul>
 							</li>
 
 							<!-- Dropdown submenu -->
 							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">About</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="about.html">About Us</a></li>
-									<li> <a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+								<a class="dropdown-item" href="../app/admin/courses.html">About</a>
+								<!-- <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="about.html">Course A</a></li>
+									<li> <a class="dropdown-item" href="../app/admin/courses.html">CCourse A</a></li>
 									<li> <a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
 									<li> <a class="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
 									<li> <a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
 									<li> <a class="dropdown-item" href="pricing.html">Pricing</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hero Banner</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="docs/snippet-hero-12.html">Hero Form</a></li>
-									<li> <a class="dropdown-item" href="docs/snippet-hero-13.html">Hero Vector</a></li>
-									<li> <p class="dropdown-item mb-0">Coming soon....</p></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="instructor-list.html">Instructor List</a></li>
-							<li> <a class="dropdown-item" href="instructor-single.html">Instructor Single</a></li>
-							<li> <a class="dropdown-item" href="become-instructor.html">Become an Instructor</a></li>
-							<li> <a class="dropdown-item" href="abroad-single.html">Abroad Single</a></li>
-							<li> <a class="dropdown-item" href="workshop-detail.html">Workshop Detail</a></li>
-							<li> <a class="dropdown-item" href="event-detail.html">Event Detail <span class="badge bg-success ms-2 smaller">New</span></a></li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Shop</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="shop.html">Shop grid</a></li>
-									<li> <a class="dropdown-item" href="shop-product-detail.html">Product detail</a></li>
-									<li> <a class="dropdown-item" href="cart.html">Cart</a></li>
-									<li> <a class="dropdown-item" href="checkout.html">Checkout</a></li>
-									<li> <a class="dropdown-item" href="empty-cart.html">Empty Cart</a></li>
-									<li> <a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Help</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="help-center.html">Help Center</a></li>
-									<li> <a class="dropdown-item" href="help-center-detail.html">Help Center Single</a></li>
-									<li> <a class="dropdown-item" href="faq.html">FAQs</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="sign-in.html">Sign In</a></li>
-									<li> <a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
-									<li> <a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Form</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="request-demo.html">Request a demo</a></li>
-									<li> <a class="dropdown-item" href="book-class.html">Book a Class</a></li>
-									<li> <a class="dropdown-item" href="request-access.html">Free Access</a></li>
-									<li> <a class="dropdown-item" href="university-admission-form.html">Admission Form</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Specialty</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="error-404.html">Error 404</a></li>
-									<li> <a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-								</ul>
+								</ul> -->
 							</li>
 
 						</ul>
@@ -266,29 +187,29 @@
 
 					<!-- Nav item 3 Account -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
+						<a class="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
 						<ul class="dropdown-menu" aria-labelledby="accounntMenu">
 							<!-- Dropdown submenu -->
 							<li class="dropdown-submenu dropend">
 								<a class="dropdown-item dropdown-toggle" href="#"><i class="fas fa-user-tie fa-fw me-1"></i>Instructor</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="instructor-dashboard.html"><i class="bi bi-grid-fill fa-fw me-1"></i>Dashboard</a> </li>
-									<li> <a class="dropdown-item" href="instructor-manage-course.html"><i class="bi bi-basket-fill fa-fw me-1"></i>Courses</a> </li>
-									<li> <a class="dropdown-item" href="instructor-create-course.html"><i class="bi bi-file-earmark-plus-fill fa-fw me-1"></i>Create Course</a> </li>
-									<li> <a class="dropdown-item" href="course-added.html"><i class="bi bi-file-check-fill fa-fw me-1"></i>Course Added</a> </li>
-									<li> <a class="dropdown-item" href="instructor-quiz.html"><i class="bi bi-question-diamond fa-fw me-1"></i>Quiz</a> </li>
-									<li> <a class="dropdown-item" href="instructor-earning.html"><i class="fas fa-chart-line fa-fw me-1"></i>Earnings</a> </li>
-									<li> <a class="dropdown-item" href="instructor-studentlist.html"><i class="fas fa-user-graduate fa-fw me-1"></i>Students</a> </li>
-									<li> <a class="dropdown-item" href="instructor-order.html"><i class="bi bi-cart-check-fill fa-fw me-1"></i>Orders</a> </li>
-									<li> <a class="dropdown-item" href="instructor-review.html"><i class="bi bi-star-fill fa-fw me-1"></i>Reviews</a> </li>
-									<li> <a class="dropdown-item" href="instructor-payout.html"><i class="fas fa-wallet fa-fw me-1"></i>Payout</a> </li>
-								</ul>
+								<!-- <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-grid-fill fa-fw me-1"></i>Dashboard</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-basket-fill fa-fw me-1"></i>Courses</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-file-earmark-plus-fill fa-fw me-1"></i>Create Course</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-file-check-fill fa-fw me-1"></i>Course Added</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-question-diamond fa-fw me-1"></i>Quiz</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="fas fa-chart-line fa-fw me-1"></i>Earnings</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="fas fa-user-graduate fa-fw me-1"></i>Students</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-cart-check-fill fa-fw me-1"></i>Orders</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="bi bi-star-fill fa-fw me-1"></i>Reviews</a> </li>
+									<li> <a class="dropdown-item" href="#"><i class="fas fa-wallet fa-fw me-1"></i>Payout</a> </li>
+								</ul> -->
 							</li>
 
 							<!-- Dropdown submenu -->
 								<li class="dropdown-submenu dropend">
 								<a class="dropdown-item dropdown-toggle" href="#"><i class="fas fa-user-graduate fa-fw me-1"></i>Student</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
+								<!-- <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
 									<li> <a class="dropdown-item" href="student-dashboard.html"><i class="bi bi-grid-fill fa-fw me-1"></i>Dashboard</a> </li>
 									<li> <a class="dropdown-item" href="student-subscription.html"><i class="bi bi-card-checklist fa-fw me-1"></i>My Subscriptions</a> </li>
 									<li> <a class="dropdown-item" href="student-course-list.html"><i class="bi bi-basket-fill fa-fw me-1"></i>Courses</a> </li>
@@ -296,51 +217,27 @@
 									<li> <a class="dropdown-item" href="student-quiz.html"><i class="bi bi-question-diamond fa-fw me-1"></i>Quiz </a> </li>
 									<li> <a class="dropdown-item" href="student-payment-info.html"><i class="bi bi-credit-card-2-front-fill fa-fw me-1"></i>Payment Info</a> </li>
 									<li> <a class="dropdown-item" href="student-bookmark.html"><i class="fas bi-cart-check-fill fa-fw me-1"></i>Wishlist</a> </li>
-								</ul>
+								</ul> -->
 							</li>
 							
-							<li> <a class="dropdown-item" href="admin-dashboard.html"><i class="fas fa-user-cog fa-fw me-1"></i>Admin</a> </li>
+							<li> <a class="dropdown-item" href="#"><i class="fas fa-user-cog fa-fw me-1"></i>Admin</a> </li>
 							<li> <hr class="dropdown-divider"></li>
-							<li> <a class="dropdown-item" href="instructor-edit-profile.html"><i class="fas fa-fw fa-edit me-1"></i>Edit Profile</a> </li>
-							<li> <a class="dropdown-item" href="instructor-setting.html"><i class="fas fa-fw fa-cog me-1"></i>Settings</a> </li>
-							<li> <a class="dropdown-item" href="instructor-delete-account.html"><i class="fas fa-fw fa-trash-alt me-1"></i>Delete Profile</a> </li>
+							<li> <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit me-1"></i>Edit Profile</a> </li>
+							<li> <a class="dropdown-item" href="#"><i class="fas fa-fw fa-cog me-1"></i>Settings</a> </li>
+							<li> <a class="dropdown-item" href="#"><i class="fas fa-fw fa-trash-alt me-1"></i>Delete Profile</a> </li>
 							
 							<li> <hr class="dropdown-divider"></li>
 							<!-- Dropdown Level -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
-								<ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
-
-									<!-- dropdown submenu open right -->
-									<li class="dropdown-submenu dropend">
-										<a class="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
-										<ul class="dropdown-menu" data-bs-popper="none">
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-										</ul>
-									</li>
-									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-
-									<!-- dropdown submenu open left -->
-									<li class="dropdown-submenu dropstart">
-										<a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
-										<ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-										</ul>
-									</li>
-									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-								</ul>
-							</li>
+							
 						</ul>
 					</li>
 
 					<!-- Nav item 4 Megamenu-->
-					<li class="nav-item dropdown dropdown-fullwidth">
+					<!-- <li class="nav-item dropdown dropdown-fullwidth">
 						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Megamenu</a>
 						<div class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
 							<div class="row p-4 g-4">
-								<!-- Dropdown column item -->
+								Dropdown column item
 								<div class="col-xl-6 col-xxl-3">
 									<h6 class="mb-0">Get started</h6>
 									<hr>
@@ -359,32 +256,32 @@
 									</ul>
 								</div>
 								
-								<!-- Dropdown column item -->
+								Dropdown column item
 								<div class="col-xl-6 col-xxl-3">
 									<h6 class="mb-0">Degree</h6>
 									<hr>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="mb-2 position-relative bg-primary-soft-hover rounded-2 transition-base p-3">
 										<a class="stretched-link h6 mb-0" href="#">Contact management</a>
 										<p class="mb-0 small text-truncate-2">Speedily say has suitable disposal add boy. On forth doubt miles of child.</p>
 									</div>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="mb-2 position-relative bg-primary-soft-hover rounded-2 transition-base p-3">
 										<a class="stretched-link h6 mb-0" href="#">Sales pipeline</a>
 										<p class="mb-0 small text-truncate-2">Speedily say has suitable disposal add boy. On forth doubt miles of child.</p>
 									</div>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="mb-2 position-relative bg-primary-soft-hover rounded-2 transition-base p-3">
 										<a class="stretched-link h6 mb-0" href="#">Security &amp; Permission</a>
 										<p class="mb-0 small text-truncate-2">Speedily say has suitable disposal add boy. On forth doubt miles of child.</p>
 									</div>
 								</div>
 
-								<!-- Dropdown column item -->
+								Dropdown column item
 								<div class="col-xl-6 col-xxl-3">
 									<h6 class="mb-0">Certificate</h6>
 									<hr>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="d-flex mb-4 position-relative">
 										<h2 class="mb-0"><i class="fab fa-fw fa-google text-google-icon"></i></h2>
 										<div class="ms-2">
@@ -392,7 +289,7 @@
 											<p class="mb-0 small">No prerequisites</p>
 										</div>
 									</div>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="d-flex mb-4 position-relative">
 										<h2 class="mb-0"><i class="fab fa-fw fa-linkedin-in text-linkedin"></i></h2>
 										<div class="ms-2">
@@ -400,7 +297,7 @@
 											<p class="mb-0 small">No prerequisites</p>
 										</div>
 									</div>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="d-flex mb-4 position-relative">
 										<h2 class="mb-0"><i class="fab fa-fw fa-facebook text-facebook"></i></h2>
 										<div class="ms-2">
@@ -408,7 +305,7 @@
 											<p class="mb-0 small">Expert advice</p>
 										</div>
 									</div>
-									<!-- Dropdown item -->
+									Dropdown item
 									<div class="d-flex mb-4 position-relative">
 										<h2 class="mb-0"><i class="fas fa-fw fa-basketball-ball text-dribbble"></i></h2>
 										<div class="ms-2">
@@ -418,43 +315,43 @@
 									</div>
 								</div>
 
-								<!-- Dropdown column item -->
+								Dropdown column item
 								<div class="col-xl-6 col-xxl-3">
 									<h6 class="mb-0">Download Eduport</h6>
 									<hr>
-									<!-- Image -->
+									Image
 									<img src="assets/images/element/14.svg" alt="">
 
-									<!-- Download button -->
+									Download button
 									<div class="row g-2 justify-content-center mt-3">
-										<!-- Google play store button -->
+										Google play store button
 										<div class="col-6 col-sm-4 col-xxl-6">
 											<a href="#"> <img src="assets/img/client/google-play.svg" class="btn-transition" alt="google-store"> </a>
 										</div>
-										<!-- App store button -->
+										App store button
 										<div class="col-6 col-sm-4 col-xxl-6">
 											<a href="#"> <img src="assets/img/client/app-store.svg" class="btn-transition" alt="app-store"> </a>
 										</div>
 									</div>
 								</div>
 
-								<!-- Action box -->
+								Action box
 								<div class="col-12">
 									<div class="alert alert-success alert-dismissible fade show mt-2 mb-0 rounded-3" role="alert">
-										<!-- Avatar -->
+										Avatar
 										<div class="avatar avatar-xs me-2">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="avatar">
+											<img class="avatar-img rounded-circle" src="assets/img/avatars/1.png" alt="avatar">
 										</div>
-										<!-- Info -->
+										Info
 										The personality development class starts at 2:00 pm, click to <a href="#" class="alert-link">Join Now</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
+					</li> -->
 
 					<!-- Nav item 5 link-->
-					<li class="nav-item dropdown">
+					<!-- <li class="nav-item dropdown">
 						<a class="nav-link" href="#" id="advanceMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-ellipsis-h"></i>
 						</a>
@@ -492,7 +389,7 @@
 								</a>
 							</li>
 						</ul>
-					</li>
+					</li> -->
 				</ul>
 				<!-- Nav Main menu END -->
 
@@ -522,7 +419,7 @@
 						<div class="d-flex align-items-center">
 							<!-- Avatar -->
 							<div class="avatar me-3">
-								<img class="avatar-img rounded-circle shadow" src="assets/images/avatar/01.jpg" alt="avatar">
+								<img class="avatar-img rounded-circle shadow" src="assets/img/avatars/01.jpg" alt="avatar">
 							</div>
 							<div>
 								<a class="h6" href="#">Lori Ferguson</a>
@@ -1879,7 +1776,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/04.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Billy Vasquez</a></p>
 									</div>
@@ -1932,7 +1829,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/09.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Lori Stevens</a></p>
 									</div>
@@ -1985,7 +1882,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/01.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/1.png" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Frances Guerrero</a></p>
 									</div>
@@ -2040,7 +1937,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/10.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/10.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Larry Lawson</a></p>
 									</div>
@@ -2093,7 +1990,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/04.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Billy Vasquez</a></p>
 									</div>
@@ -2146,7 +2043,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/09.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Lori Stevens</a></p>
 									</div>
@@ -2199,7 +2096,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/01.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/1.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Frances Guerrero</a></p>
 									</div>
@@ -2256,7 +2153,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/10.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/10.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Larry Lawson</a></p>
 									</div>
@@ -2313,7 +2210,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/04.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Billy Vasquez</a></p>
 									</div>
@@ -2370,7 +2267,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/09.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Lori Stevens</a></p>
 									</div>
@@ -2427,7 +2324,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/01.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/1.png" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Frances Guerrero</a></p>
 									</div>
@@ -2484,7 +2381,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/10.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/10.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Larry Lawson</a></p>
 									</div>
@@ -2537,7 +2434,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/5.png" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Billy Vasquez</a></p>
 									</div>
@@ -2590,7 +2487,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/09.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Lori Stevens</a></p>
 									</div>
@@ -2643,7 +2540,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/01.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/1.png" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Frances Guerrero</a></p>
 									</div>
@@ -2698,7 +2595,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/10.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/10.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Larry Lawson</a></p>
 									</div>
@@ -2751,7 +2648,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/04.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Billy Vasquez</a></p>
 									</div>
@@ -2804,7 +2701,7 @@ Trending courses START -->
 									<!-- Avatar -->
 									<div class="d-flex align-items-center">
 										<div class="avatar avatar-sm">
-											<img class="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
+											<img class="avatar-img rounded-1" src="assets/img/avatars/09.jpg" alt="avatar">
 										</div>
 										<p class="mb-0 ms-2"><a href="#" class="h6 fw-light mb-0">Lori Stevens</a></p>
 									</div>
@@ -2844,7 +2741,7 @@ Reviews START -->
 						<div class="bg-body shadow text-center p-4 rounded-3 position-relative mb-5 mb-md-0">
 							<!-- Avatar -->
 							<div class="avatar avatar-xl mb-3">
-								<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
+								<img class="avatar-img rounded-circle" src="assets/img/avatars/7.png" alt="avatar">
 							</div>
 							<!-- Content -->
 							<blockquote>
@@ -2880,7 +2777,7 @@ Reviews START -->
 							<div class="d-flex align-items-center mb-3">
 								<!-- Avatar -->
 								<div class="avatar avatar-sm">
-									<img class="avatar-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
+									<img class="avatar-img rounded-1" src="assets/img/avatars/15.png" alt="avatar">
 								</div>
 								<!-- Info -->
 								<div class="ms-2">
@@ -2893,7 +2790,7 @@ Reviews START -->
 							<div class="d-flex align-items-center mb-3">
 								<!-- Avatar -->
 								<div class="avatar avatar-sm">
-									<img class="avatar-img rounded-1" src="assets/images/avatar/04.jpg" alt="avatar">
+									<img class="avatar-img rounded-1" src="assets/img/avatars/17.png" alt="avatar">
 								</div>
 								<!-- Info -->
 								<div class="ms-2">
@@ -2906,7 +2803,7 @@ Reviews START -->
 							<div class="d-flex align-items-center">
 								<!-- Avatar -->
 								<div class="avatar avatar-sm">
-									<img class="avatar-img rounded-1" src="assets/images/avatar/02.jpg" alt="avatar">
+									<img class="avatar-img rounded-1" src="assets/img/avatars/6.png" alt="avatar">
 								</div>
 								<!-- Info -->
 								<div class="ms-2">
@@ -2992,7 +2889,7 @@ Reviews START -->
 						<div class="bg-body shadow text-center p-4 rounded-3">
 							<!-- Avatar -->
 							<div class="avatar avatar-xl mb-3">
-								<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
+								<img class="avatar-img rounded-circle" src="assets/img/avatars/5.png" alt="avatar">
 							</div>
 							<!-- Content -->
 							<blockquote>
@@ -3042,10 +2939,10 @@ Footer START -->
 			<div class="col-lg-3">
 				<!-- logo -->
 				<a class="me-0" href="index.html">
-					<img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo">
+					<img class="light-mode-item h-70px" src="assets/img/logo/enterprisewhittejpeg.jpeg" alt="logo">
 					<img class="dark-mode-item h-40px" src="assets/images/logo-light.svg" alt="logo">
 				</a>
-				<p class="my-3">Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
+				<p class="my-3">Enterprise education LMS, built specifically for the education centers which is dedicated to teaching and involve learners.</p>
 				<!-- Social media icon -->
 				<ul class="list-inline mb-0 mt-3">
 					<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
@@ -3109,11 +3006,11 @@ Footer START -->
 				<div class="row g-2 mt-2">
 					<!-- Google play store button -->
 					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
-						<a href="#"> <img src="assets/images/client/google-play.svg" alt=""> </a>
+						<a href="#"> <img src="assets/img/client/google-play.svg" alt=""> </a>
 					</div>
 					<!-- App store button -->
 					<div class="col-6 col-sm-4 col-md-3 col-lg-6">
-						<a href="#"> <img src="assets/images/client/app-store.svg" alt="app-store"> </a>
+						<a href="#"> <img src="assets/img/client/app-store.svg" alt="app-store"> </a>
 					</div>
 				</div> <!-- Row END -->
 			</div> 
@@ -3128,7 +3025,7 @@ Footer START -->
 			<div class="container px-0">
 				<div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-md-left">
 					<!-- copyright text -->
-					<div class="text-primary-hover"> Copyrights <a href="https://www.webestica.com/" target="_blank" class="text-body">©2023 Webestica</a>. All rights reserved. </div>
+					<div class="text-primary-hover"> Copyrights <a href="#" target="_blank" class="text-body">©2023 Metrosoft</a>. All rights reserved. </div>
 					<!-- copyright links-->
 					<div class="justify-content-center mt-3 mt-lg-0">
 						<ul class="nav list-inline justify-content-center mb-0">
